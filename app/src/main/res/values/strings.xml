@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">CruiseMasters</string>
+    <string name="back">Back</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="car_details">Car Details</string>
+    <string name="book_now">Book Now</string>
+    <string name="horsepower">Horsepower</string>
+    <string name="acceleration">Acceleration</string>
+    <string name="top_speed">Top Speed</string>
+    <string name="period">Period</string>
+    <string name="total_price">Total Price</string>
+    <string name="status">Status</string>
+    <string name="amount">Amount</string>
+    <string name="date">Date</string>
+    <string name="car_image">Car Image</string>
+
+    <!-- Car names -->
+    <string name="bmw_m8">BMW M8 Competition</string>
+    <string name="mercedes_amg">Mercedes-AMG GT</string>
+    <string name="audi_r8">Audi R8</string>
+    <string name="porsche_911">Porsche 911 Turbo S</string>
+
+    <!-- Car descriptions -->
+    <string name="bmw_description">Luxury sports coupe with exceptional performance and premium features. The BMW M8 Competition delivers breathtaking acceleration and sophisticated styling.</string>
+    <string name="mercedes_description">The Mercedes-AMG GT combines stunning design with race-track performance. Experience the ultimate in luxury sports car driving.</string>
+</resources>
