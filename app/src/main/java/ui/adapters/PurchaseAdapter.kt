@@ -34,6 +34,8 @@ class PurchaseAdapter(private val purchases: List<Purchase>) :
             amount.text = "$${purchase.amount}"
             date.text = purchase.date
             status.text = purchase.status
+
+
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.example.cruisemastersmad.ui.models
+package ui.models
 
 data class Car(
     val id: Int,

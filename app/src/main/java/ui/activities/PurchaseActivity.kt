@@ -1,11 +1,15 @@
 package com.example.cruisemastersmad.activities
 
+import Purchase
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.cruisemastersmad.ui.adapters.PurchaseAdapter
+import com.example.cruisemastersmad.adapters.PurchaseAdapter
 import com.example.cruisemastersmad.databinding.ActivityPurchaseBinding
 import com.example.cruisemastersmad.models.Purchase
+import com.example.cruisemastersmad.ui.adapters.PurchaseAdapter
+import com.example.cruisemastersmad.ui.models.Purchase
+
 
 class PurchaseActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPurchaseBinding
