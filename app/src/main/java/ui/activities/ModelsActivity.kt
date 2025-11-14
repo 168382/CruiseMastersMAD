@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cruisemastersmad.databinding.ActivityModelsBinding
 import com.example.cruisemastersmad.ui.adapters.CarAdapter
-import com.example.cruisemastersmad.ui.models.Car
+import ui.models.Car
 
 class ModelsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityModelsBinding
