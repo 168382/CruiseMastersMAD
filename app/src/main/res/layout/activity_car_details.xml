@@ -52,13 +52,25 @@
             android:textStyle="bold"
             android:layout_marginTop="16dp" />
 
+        <!-- Car Year -->
         <TextView
-            android:id="@+id/carBrand"
+            android:id="@+id/carYear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Brand"
+            android:text="Year"
             android:textSize="16sp"
-            android:textColor="?attr/colorPrimary" />
+            android:textColor="?attr/colorPrimary"
+            android:layout_marginTop="8dp" />
+
+        <!-- Car Mileage -->
+        <TextView
+            android:id="@+id/carMileage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mileage"
+            android:textSize="16sp"
+            android:textColor="?attr/colorPrimary"
+            android:layout_marginTop="8dp" />
 
         <TextView
             android:id="@+id/carPrice"
@@ -70,14 +82,7 @@
             android:textColor="?attr/colorPrimary"
             android:layout_marginTop="8dp" />
 
-        <TextView
-            android:id="@+id/carDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Description"
-            android:textSize="14sp"
-            android:layout_marginTop="16dp"
-            android:lineSpacingExtra="4dp" />
+
 
         <LinearLayout
             android:layout_width="match_parent"

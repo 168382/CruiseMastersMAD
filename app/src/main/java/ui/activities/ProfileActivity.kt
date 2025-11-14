@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cruisemastersmad.databinding.ActivityProfileBinding
 import com.example.cruisemastersmad.ui.adapters.BookingAdapter
 import com.example.cruisemastersmad.ui.adapters.PurchaseAdapter
-import com.example.cruisemastersmad.ui.models.Booking
-import com.example.cruisemastersmad.ui.models.Purchase
+import ui.models.Booking
+import ui.models.Purchase
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

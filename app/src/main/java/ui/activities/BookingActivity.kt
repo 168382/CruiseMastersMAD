@@ -1,11 +1,11 @@
-package com.example.cruisemastersmad.activities
+package ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cruisemastersmad.ui.adapters.BookingAdapter
 import com.example.cruisemastersmad.databinding.ActivityBookingBinding
-import com.example.cruisemastersmad.models.Booking
+import ui.models.Booking
 
 class BookingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityBookingBinding
@@ -37,8 +37,8 @@ class BookingActivity : AppCompatActivity() {
 
     private fun getSampleBookings(): List<Booking> {
         return listOf(
-            Booking(1, 1, "BMW M8", "2024-01-15", "2024-01-20", 1500.0, "Confirmed"),
-            Booking(2, 2, "Mercedes AMG", "2024-02-01", "2024-02-05", 1200.0, "Pending")
+            Booking(1, 1, "BMW M8", "2024-01-15", "2024-01-20"),
+            Booking(2, 2, "Mercedes AMG", "2024-02-01", "2024-02-05")
         )
     }
 }

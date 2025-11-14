@@ -1,9 +1,11 @@
 package com.example.cruisemastersmad.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.cruisemastersmad.R
 import com.example.cruisemastersmad.databinding.ActivityCarDetailsBinding
-import com.example.cruisemastersmad.models.Car
+import ui.models.Car
+import java.io.Serializable
 
 class CarDetailsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCarDetailsBinding
@@ -13,7 +15,8 @@ class CarDetailsActivity : AppCompatActivity() {
         binding = ActivityCarDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val car = intent.getParcelableExtra<Car>("car")
+        // Get the car object from the intent using Serializable
+        val car = intent.getSerializableExtra("car") as? Car
         car?.let { displayCarDetails(it) }
 
         setupClickListeners()
@@ -21,15 +24,12 @@ class CarDetailsActivity : AppCompatActivity() {
 
     private fun displayCarDetails(car: Car) {
         binding.carName.text = car.name
-        binding.carBrand.text = car.brand
-        binding.carPrice.text = "$${car.price}/day"
-        binding.carDescription.text = car.description
-        binding.horsepowerValue.text = "${car.horsepower} HP"
-        binding.accelerationValue.text = "${car.acceleration}s 0-60"
-        binding.topSpeedValue.text = "${car.topSpeed} mph"
+        binding.carYear.text = car.year
+        binding.carMileage.text = car.mileage
+        binding.carPrice.text = "$${car.price}"
 
-        // Load image - for now using placeholder
-        binding.carImage.setImageResource(car.imageResId)
+        // Placeholder image since Car.kt has no image
+        binding.carImage.setImageResource(R.drawable.logo2)
     }
 
     private fun setupClickListeners() {

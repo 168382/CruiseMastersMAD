@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cruisemastersmad.R
-import com.example.cruisemastersmad.models.Purchase
+import ui.models.Purchase
 
 class PurchaseAdapter(private val purchases: List<Purchase>) :
     RecyclerView.Adapter<PurchaseAdapter.PurchaseViewHolder>() {
@@ -31,8 +31,8 @@ class PurchaseAdapter(private val purchases: List<Purchase>) :
 
         fun bind(purchase: Purchase) {
             carName.text = purchase.carName
-            amount.text = "$${purchase.amount}"
-            date.text = purchase.date
+            amount.text = "$${purchase.price}"
+            date.text = purchase.purchaseDate
             status.text = purchase.status
 
 
