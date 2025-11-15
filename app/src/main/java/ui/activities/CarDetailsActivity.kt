@@ -23,8 +23,8 @@ class CarDetailsActivity : AppCompatActivity() {
     }
 
     private fun displayCarDetails(car: Car) {
+        binding.carImage.setImageResource(car.imageResId)
         binding.carName.text = car.name
-        binding.carYear.text = car.year
         binding.carMileage.text = car.mileage
         binding.carPrice.text = "$${car.price}"
 

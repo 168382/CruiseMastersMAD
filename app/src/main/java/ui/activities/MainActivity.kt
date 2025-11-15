@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cruisemastersmad.databinding.ActivityMainBinding
+import com.example.cruisemastersmad.ui.activities.LoginActivity
+import com.example.cruisemastersmad.ui.activities.SignUpActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

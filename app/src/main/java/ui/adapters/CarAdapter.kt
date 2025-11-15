@@ -29,12 +29,12 @@ class CarAdapter(
     inner class CarViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val carImage: ImageView = itemView.findViewById(R.id.carImage)
         private val carName: TextView = itemView.findViewById(R.id.carName)
-        private val carBrand: TextView = itemView.findViewById(R.id.carBrand)
+        private val carMileage: TextView = itemView.findViewById(R.id.carMileage)
         private val carPrice: TextView = itemView.findViewById(R.id.carPrice)
 
         fun bind(car: Car) {
             carName.text = car.name
-            carBrand.text = car.brand
+            carMileage.text = car.mileage
             carPrice.text = "$${car.price}/day"
             carImage.setImageResource(car.imageResId)
 

@@ -42,7 +42,7 @@ class ModelsActivity : AppCompatActivity() {
                 .show()
         }
 
-        binding.recyclerView.apply {
+        binding.recyclerViewCars.apply {
             layoutManager = LinearLayoutManager(this@ModelsActivity)
             adapter = carAdapter
         }

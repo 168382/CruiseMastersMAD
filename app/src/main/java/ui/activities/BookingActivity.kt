@@ -22,7 +22,7 @@ class BookingActivity : AppCompatActivity() {
 
     private fun setupRecyclerView() {
         val bookings = getSampleBookings()
-        bookingAdapter = BookingAdapter(bookings)
+        bookingAdapter = BookingAdapter()
         binding.bookingsRecyclerView.apply {
             layoutManager = LinearLayoutManager(this@BookingActivity)
             adapter = bookingAdapter
