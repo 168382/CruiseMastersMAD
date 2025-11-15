@@ -3,12 +3,9 @@ package com.example.cruisemastersmad.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import ui.adapters.PurchaseAdapter
 import com.example.cruisemastersmad.databinding.ActivityPurchaseBinding
-import ui.models.Purchase
 import com.example.cruisemastersmad.ui.adapters.PurchaseAdapter
 import ui.models.Purchase
-
 
 class PurchaseActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPurchaseBinding
@@ -24,12 +21,14 @@ class PurchaseActivity : AppCompatActivity() {
     }
 
     private fun setupRecyclerView() {
-        val purchases = getSamplePurchases()
-        purchaseAdapter = PurchaseAdapter(purchases)
+        purchaseAdapter = PurchaseAdapter()
+
         binding.purchasesRecyclerView.apply {
             layoutManager = LinearLayoutManager(this@PurchaseActivity)
-            adapter = PurchaseAdapter
+            adapter = purchaseAdapter
         }
+
+        purchaseAdapter.submitList(getSamplePurchases())
     }
 
     private fun setupClickListeners() {

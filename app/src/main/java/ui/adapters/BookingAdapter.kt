@@ -6,10 +6,17 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cruisemastersmad.R
-import com.example.cruisemastersmad.models.Booking
+import ui.models.Booking
 
-class BookingAdapter(private val bookings: List<Booking>) :
-    RecyclerView.Adapter<BookingAdapter.BookingViewHolder>() {
+class BookingAdapter : RecyclerView.Adapter<BookingAdapter.BookingViewHolder>() {
+
+    private val bookings = mutableListOf<Booking>()
+
+    fun submitList(newList: List<Booking>) {
+        bookings.clear()
+        bookings.addAll(newList)
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookingViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -26,14 +33,10 @@ class BookingAdapter(private val bookings: List<Booking>) :
     class BookingViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val carName: TextView = itemView.findViewById(R.id.bookingCarName)
         private val period: TextView = itemView.findViewById(R.id.bookingPeriod)
-        private val totalPrice: TextView = itemView.findViewById(R.id.bookingTotalPrice)
-        private val status: TextView = itemView.findViewById(R.id.bookingStatus)
 
         fun bind(booking: Booking) {
-            carName.text = booking.carName
-            period.text = "${booking.startDate} to ${booking.endDate}"
-            totalPrice.text = "$${booking.totalPrice}"
-            status.text = booking.status
+            carName.text = booking.vehicleName
+            period.text = "${booking.pickupDate} → ${booking.returnDate}"
         }
     }
 }

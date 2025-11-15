@@ -8,8 +8,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.cruisemastersmad.R
 import ui.models.Purchase
 
-class PurchaseAdapter(private val purchases: List<Purchase>) :
-    RecyclerView.Adapter<PurchaseAdapter.PurchaseViewHolder>() {
+class PurchaseAdapter : RecyclerView.Adapter<PurchaseAdapter.PurchaseViewHolder>() {
+
+    private val purchases = mutableListOf<Purchase>()
+
+    fun submitList(newList: List<Purchase>) {
+        purchases.clear()
+        purchases.addAll(newList)
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PurchaseViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -34,8 +41,6 @@ class PurchaseAdapter(private val purchases: List<Purchase>) :
             amount.text = "$${purchase.price}"
             date.text = purchase.purchaseDate
             status.text = purchase.status
-
-
         }
     }
 }
