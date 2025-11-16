@@ -48,66 +48,58 @@ class ModelsActivity : AppCompatActivity() {
             Car(
                 carId = "1",
                 name = "BMW M8",
-                year_of_make = "2023",
                 mileage = "15 km/l",
                 price = "250",
-                image = "bmw_m8.jpg"
+                image = "bmw_x5.jpg"
             ),
             Car(
                 carId = "2",
                 name = "Mercedes AMG",
-                year_of_make = "2023",
                 mileage = "12 km/l",
                 price = "280",
-                image = "mercedes_amg.jpg"
+                image = "mercedes_c_class.jpg"
             ),
             Car(
                 carId = "3",
                 name = "Audi R8",
-                year_of_make = "2023",
                 mileage = "10 km/l",
                 price = "300",
-                image = "audi_r8.jpg"
+                image = "audi_a4.jpg"
             ),
             Car(
                 carId = "4",
                 name = "Porsche 911",
-                year_of_make = "2023",
                 mileage = "11 km/l",
                 price = "320",
-                image = "porsche_911.jpg"
+                image = "bmw_x5.jpg"
             ),
             Car(
                 carId = "5",
                 name = "Lamborghini Huracan",
-                year_of_make = "2023",
                 mileage = "8 km/l",
                 price = "450",
-                image = "lamborghini_huracan.jpg"
+                image = "bmw_x5.jpg"
             ),
             Car(
                 carId = "6",
                 name = "Ferrari F8",
-                year_of_make = "2023",
                 mileage = "9 km/l",
                 price = "420",
-                image = "ferrari_f8.jpg"
+                image = "bmw_x5.jpg"
             ),
             Car(
                 carId = "7",
                 name = "Tesla Model S",
-                year_of_make = "2023",
                 mileage = "Electric",
                 price = "200",
-                image = "tesla_model_s.jpg"
+                image = "bmw_x5.jpg"
             ),
             Car(
                 carId = "8",
                 name = "Range Rover",
-                year_of_make = "2023",
                 mileage = "14 km/l",
                 price = "180",
-                image = "range_rover.jpg"
+                image = "bmw_x5.jpg"
             )
         )
     }

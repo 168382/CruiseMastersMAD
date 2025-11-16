@@ -56,16 +56,16 @@ abstract class AppDatabase : RoomDatabase() {
         suspend fun populateDatabase(carDao: CarDao) {
             // Pre-populate with some cars
             val cars = listOf(
-                Car("1", "BMW M8 Competition", "2023", "15000", "$120000", "bmw_x5.jpg"),
-                Car("2", "Mercedes-AMG GT", "2023", "12000", "$135000", "mercedes_c_class.jpg"),
-                Car("3", "Audi R8", "2022", "18000", "$150000", "audi_a4.jpg"),
-                Car("4", "Porsche 911 Turbo S", "2023", "8000", "$200000", "porsche_911.jpg"),
-                Car("5", "Audi A4", "2022", "25000", "$45000", "audi_a4.jpg"),
-                Car("6", "BMW X5", "2021", "35000", "$55000", "bmw_x5.jpg"),
-                Car("7", "Mercedes C-Class", "2022", "22000", "$48000", "mercedes_c_class.jpg"),
-                Car("8", "Chevrolet Camaro", "2023", "10000", "$35000", "chevrolet_camaro.jpg"),
-                Car("9", "Ford Mustang", "2022", "28000", "$42000", "ford_mustang.jpg"),
-                Car("10", "Honda Civic", "2023", "15000", "$25000", "honda_civic.jpg")
+                Car("1", "BMW M8 Competition", "15000", "$120000", "bmw_x5.jpg"),
+                Car("2", "Mercedes-AMG GT", "12000", "$135000", "mercedes_c_class.jpg"),
+                Car("3", "Audi R8", "18000", "$150000", "audi_a4.jpg"),
+                Car("4", "Porsche 911 Turbo S", "8000", "$200000", "bmw_x5.jpg"),
+                Car("5", "Audi A4", "25000", "$45000", "audi_a4.jpg"),
+                Car("6", "BMW X5", "35000", "$55000", "bmw_x5.jpg"),
+                Car("7", "Mercedes C-Class", "22000", "$48000", "mercedes_c_class.jpg"),
+                Car("8", "Chevrolet Camaro", "10000", "$35000", "chevrolet_camaro.jpg"),
+                Car("9", "Ford Mustang", "28000", "$42000", "ford_mustang.jpg"),
+                Car("10", "Honda Civic", "15000", "$25000", "honda_civic.jpg")
             )
             carDao.insertCars(cars)
         }
