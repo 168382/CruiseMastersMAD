@@ -11,7 +11,6 @@ data class Car(
     @PrimaryKey
     val carId: String,
     val name: String,
-    val year_of_make: String,
     val mileage: String,
     val price: String,
     val image: String

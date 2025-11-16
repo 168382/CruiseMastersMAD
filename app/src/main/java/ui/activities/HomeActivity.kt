@@ -19,7 +19,7 @@ class HomeActivity : AppCompatActivity() {
 
     private fun setupViews() {
         binding.btnBrowseModels.setOnClickListener {
-            startActivity(Intent(this, com.example.cruisemastersmad.ui.activities.ModelsActivity::class.java))
+            startActivity(Intent(this, ModelsActivity::class.java))
         }
 
         binding.btnProfile.setOnClickListener {

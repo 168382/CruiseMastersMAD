@@ -41,28 +41,6 @@ class ModelsActivity : AppCompatActivity() {
         binding.backButton.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }
-
-        binding.searchView.setOnQueryTextListener(object : androidx.appcompat.widget.SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String?): Boolean {
-                return false
-            }
-
-            override fun onQueryTextChange(newText: String?): Boolean {
-                filterCars(newText)
-                return true
-            }
-        })
-    }
-
-    private fun filterCars(query: String?) {
-        val filteredCars = if (query.isNullOrEmpty()) {
-            getSampleCars()
-        } else {
-            getSampleCars().filter { car ->
-                car.name.contains(query, true) || car.mileage.contains(query, true)
-            }
-        }
-        carAdapter.updateList(filteredCars)
     }
 
     private fun getSampleCars(): List<Car> {
