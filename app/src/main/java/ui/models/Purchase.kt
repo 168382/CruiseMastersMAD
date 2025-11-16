@@ -1,4 +1,4 @@
-package ui.models
+package com.example.cruisemastersmad.ui.models
 
 data class Purchase(
     val id: Int,

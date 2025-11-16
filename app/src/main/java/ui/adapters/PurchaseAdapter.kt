@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cruisemastersmad.R
-import ui.models.Purchase
+import com.example.cruisemastersmad.ui.models.Purchase
 
 class PurchaseAdapter : ListAdapter<Purchase, PurchaseAdapter.PurchaseViewHolder>(PurchaseDiffCallback) {
 

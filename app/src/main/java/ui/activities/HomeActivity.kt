@@ -1,4 +1,4 @@
-package ui.activities
+package com.example.cruisemastersmad.ui.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -45,7 +45,7 @@ class HomeActivity : AppCompatActivity() {
             apply()
         }
 
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, com.example.cruisemastersmad.ui.activities.MainActivity::class.java))
         finish()
     }
 }

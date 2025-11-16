@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cruisemastersmad.databinding.ActivityBookingBinding
 import com.example.cruisemastersmad.ui.adapters.BookingAdapter
-import ui.models.Booking
+import com.example.cruisemastersmad.ui.models.Booking
 
 class BookingActivity : AppCompatActivity() {
 

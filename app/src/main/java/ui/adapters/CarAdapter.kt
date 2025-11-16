@@ -7,12 +7,17 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cruisemastersmad.R
-import ui.models.Car
+import com.example.cruisemastersmad.ui.models.Car
 
 class CarAdapter(
-    private val cars: List<Car>,
+    private var cars: List<Car>,
     private val onItemClick: (Car) -> Unit  // single-click listener
 ) : RecyclerView.Adapter<CarAdapter.CarViewHolder>() {
+
+    fun updateList(newCars: List<Car>) {
+        cars = newCars
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarViewHolder {
         val view = LayoutInflater.from(parent.context)

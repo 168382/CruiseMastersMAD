@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cruisemastersmad.R
 import com.example.cruisemastersmad.databinding.ActivityCarDetailsBinding
-import ui.models.Car
+import com.example.cruisemastersmad.ui.models.Car
 import java.io.Serializable
 
 class CarDetailsActivity : AppCompatActivity() {

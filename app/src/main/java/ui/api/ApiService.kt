@@ -1,7 +1,7 @@
 package ui.api
 
 import com.google.firebase.appdistribution.gradle.ApiService
-import ui.models.Car
+import com.example.cruisemastersmad.ui.models.Car
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

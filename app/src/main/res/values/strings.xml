@@ -41,4 +41,17 @@
     <!-- Car descriptions -->
     <string name="bmw_description">Luxury sports coupe with exceptional performance and premium features. The BMW M8 Competition delivers breathtaking acceleration and sophisticated styling.</string>
     <string name="mercedes_description">The Mercedes-AMG GT combines stunning design with race-track performance. Experience the ultimate in luxury sports car driving.</string>
+
+    <!-- Missing strings -->
+    <string name="app_footer">© 2023 CruiseMasters. All rights reserved.</string>
+    <string name="search_cars">Search cars...</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="my_purchases">My Purchases</string>
+    <string name="no_purchases">No purchases yet</string>
+    <string name="no_bookings">No bookings yet</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="period">.</string>
 </resources>

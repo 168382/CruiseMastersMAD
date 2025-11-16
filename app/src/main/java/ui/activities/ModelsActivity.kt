@@ -4,10 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.cruisemastersmad.activities.CarDetailsActivity
 import com.example.cruisemastersmad.databinding.ActivityModelsBinding
+import com.example.cruisemastersmad.activities.CarDetailsActivity
 import com.example.cruisemastersmad.ui.adapters.CarAdapter
-import ui.models.Car
+import com.example.cruisemastersmad.ui.models.Car
 
 class ModelsActivity : AppCompatActivity() {
 
