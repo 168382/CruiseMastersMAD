@@ -1,9 +1,14 @@
 package com.example.cruisemastersmad.ui.models
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "purchases")
 data class Purchase(
-    val id: Int,
-    val carName: String,
-    val price: Double,
-    val purchaseDate: String,
+    @PrimaryKey
+    val purchaseID: String,
+    val vehiclename: String,
+    val purchasedate: String,
+    val email: String,
     val status: String
 )

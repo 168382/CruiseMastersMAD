@@ -1,13 +1,18 @@
 package com.example.cruisemastersmad.ui.models
 
 import android.os.Parcelable
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
 
+@Entity(tableName = "cars")
 @Parcelize
 data class Car(
-    val id: Int,
+    @PrimaryKey
+    val carId: String,
     val name: String,
+    val year_of_make: String,
     val mileage: String,
-    val price: Int,
-    val imageResId: Int
+    val price: String,
+    val image: String
 ) : Parcelable

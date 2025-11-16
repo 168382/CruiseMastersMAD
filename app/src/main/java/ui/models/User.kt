@@ -1,4 +1,14 @@
-package ui.models
+package com.example.cruisemastersmad.ui.models
 
-class User {
-}
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "users")
+data class User(
+    @PrimaryKey(autoGenerate = true)
+    val id: Long = 0,
+    val firstname: String,
+    val lastname: String,
+    val email: String,
+    val password: String
+)

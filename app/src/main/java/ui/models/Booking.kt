@@ -1,9 +1,15 @@
 package com.example.cruisemastersmad.ui.models
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "bookings")
 data class Booking(
-    val id: Int,
-    val userId: Int,
-    val carName: String,
-    val startDate: String,
-    val endDate: String
+    @PrimaryKey
+    val bookingsID: String,
+    val vehiclename: String,
+    val pickupdate: String,
+    val returndate: String,
+    val email: String,
+    val status: String
 )
