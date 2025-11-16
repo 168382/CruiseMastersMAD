@@ -68,60 +68,68 @@ class ModelsActivity : AppCompatActivity() {
     private fun getSampleCars(): List<Car> {
         return listOf(
             Car(
-                id = 1,
+                carId = "1",
                 name = "BMW M8",
+                year_of_make = "2023",
                 mileage = "15 km/l",
-                price = 250,
-                imageResId = R.drawable.logo2
+                price = "250",
+                image = "bmw_m8.jpg"
             ),
             Car(
-                id = 2,
+                carId = "2",
                 name = "Mercedes AMG",
+                year_of_make = "2023",
                 mileage = "12 km/l",
-                price = 280,
-                imageResId = R.drawable.logo2
+                price = "280",
+                image = "mercedes_amg.jpg"
             ),
             Car(
-                id = 3,
+                carId = "3",
                 name = "Audi R8",
+                year_of_make = "2023",
                 mileage = "10 km/l",
-                price = 300,
-                imageResId = R.drawable.logo2
+                price = "300",
+                image = "audi_r8.jpg"
             ),
             Car(
-                id = 4,
+                carId = "4",
                 name = "Porsche 911",
+                year_of_make = "2023",
                 mileage = "11 km/l",
-                price = 320,
-                imageResId = R.drawable.logo2
+                price = "320",
+                image = "porsche_911.jpg"
             ),
             Car(
-                id = 5,
+                carId = "5",
                 name = "Lamborghini Huracan",
+                year_of_make = "2023",
                 mileage = "8 km/l",
-                price = 450,
-                imageResId = R.drawable.logo2
+                price = "450",
+                image = "lamborghini_huracan.jpg"
             ),
             Car(
-                id = 6,
+                carId = "6",
                 name = "Ferrari F8",
+                year_of_make = "2023",
                 mileage = "9 km/l",
-                price = 420,
-                imageResId = R.drawable.logo2
+                price = "420",
+                image = "ferrari_f8.jpg"
             ),
             Car(
-                id = 7,
+                carId = "7",
                 name = "Tesla Model S",
+                year_of_make = "2023",
                 mileage = "Electric",
-                price = 200,
-                imageResId = R.drawable.logo2
+                price = "200",
+                image = "tesla_model_s.jpg"
             ),
             Car(
-                id = 8,
+                carId = "8",
                 name = "Range Rover",
+                year_of_make = "2023",
                 mileage = "14 km/l",
-                price = 180,
-                imageResId = R.drawable.logo2
+                price = "180",
+                image = "range_rover.jpg"
             )
         )
     }

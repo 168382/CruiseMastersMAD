@@ -39,8 +39,20 @@ class PurchaseActivity : AppCompatActivity() {
 
     private fun getSamplePurchases(): List<Purchase> {
         return listOf(
-            Purchase(1, "BMW M8", 1500.0, "2024-01-15", "Completed"),
-            Purchase(2, "Mercedes AMG", 1200.0, "2024-02-01", "Processing")
+            Purchase(
+                purchaseID = "1",
+                vehiclename = "BMW M8",
+                purchasedate = "2024-01-15",
+                email = "user@example.com",
+                status = "Completed"
+            ),
+            Purchase(
+                purchaseID = "2",
+                vehiclename = "Mercedes AMG",
+                purchasedate = "2024-02-01",
+                email = "user@example.com",
+                status = "Processing"
+            )
         )
     }
 }

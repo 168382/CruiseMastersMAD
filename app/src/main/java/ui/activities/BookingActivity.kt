@@ -39,27 +39,28 @@ class BookingActivity : AppCompatActivity() {
     private fun getSampleBookings(): List<Booking> {
         return listOf(
             Booking(
-                id = 1,
-                userId = 1,
-                carName = "BMW M8",
-                startDate = "2024-01-15",
-                endDate = "2024-01-20",
-
+                bookingsID = "1",
+                vehiclename = "BMW M8",
+                pickupdate = "2024-01-15",
+                returndate = "2024-01-20",
+                email = "user@example.com",
+                status = "Confirmed"
             ),
             Booking(
-                id = 2,
-                userId = 2,
-                carName = "Mercedes AMG",
-                startDate = "2024-02-01",
-                endDate = "2024-02-05",
-
+                bookingsID = "2",
+                vehiclename = "Mercedes AMG",
+                pickupdate = "2024-02-01",
+                returndate = "2024-02-05",
+                email = "user@example.com",
+                status = "Confirmed"
             ),
             Booking(
-                id = 3,
-                userId = 1,
-                carName = "Audi R8",
-                startDate = "2024-03-10",
-                endDate = "2024-03-15",
+                bookingsID = "3",
+                vehiclename = "Audi R8",
+                pickupdate = "2024-03-10",
+                returndate = "2024-03-15",
+                email = "user@example.com",
+                status = "Confirmed"
             )
         )
     }
