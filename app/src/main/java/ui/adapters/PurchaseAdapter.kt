@@ -30,9 +30,9 @@ class PurchaseAdapter : ListAdapter<Purchase, PurchaseAdapter.PurchaseViewHolder
         private val statusTextView: TextView = itemView.findViewById(R.id.statusTextView)
 
         fun bind(purchase: Purchase) {
-            carNameTextView.text = purchase.carName
-            amountTextView.text = "$${purchase.price}"
-            dateTextView.text = purchase.purchaseDate
+            carNameTextView.text = purchase.vehiclename
+            amountTextView.text = "$${purchase.purchaseID}"
+            dateTextView.text = purchase.purchasedate
             statusTextView.text = purchase.status
         }
     }
@@ -40,7 +40,7 @@ class PurchaseAdapter : ListAdapter<Purchase, PurchaseAdapter.PurchaseViewHolder
     companion object {
         private val PurchaseDiffCallback = object : DiffUtil.ItemCallback<Purchase>() {
             override fun areItemsTheSame(oldItem: Purchase, newItem: Purchase): Boolean {
-                return oldItem.id == newItem.id
+                return oldItem.purchaseID == newItem.purchaseID
             }
 
             override fun areContentsTheSame(oldItem: Purchase, newItem: Purchase): Boolean {

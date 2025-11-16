@@ -41,7 +41,14 @@ class CarAdapter(
             carName.text = car.name
             carMileage.text = car.mileage
             carPrice.text = "$${car.price}/day"
-            carImage.setImageResource(car.imageResId)
+            // Load image from drawable resources based on car.image string
+            val imageResId = when (car.image) {
+                "bmw_m8.jpg" -> R.drawable.bmw_x5
+                "mercedes_amg.jpg" -> R.drawable.mercedes_c_class
+                "audi_r8.jpg" -> R.drawable.audi_a4
+                else -> R.drawable.logo2
+            }
+            carImage.setImageResource(imageResId)
 
             // Single click triggers the listener in the activity
             itemView.setOnClickListener { onItemClick(car) }

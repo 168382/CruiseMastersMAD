@@ -31,10 +31,10 @@ class BookingAdapter(private val bookings: List<Booking>) :
         private val bookingIdTextView: TextView = itemView.findViewById(R.id.bookingIdTextView)
 
         fun bind(booking: Booking) {
-            carNameTextView.text = booking.carName
-            startDateTextView.text = "Start: ${booking.startDate}"
-            endDateTextView.text = "End: ${booking.endDate}"
-            bookingIdTextView.text = "Booking #${booking.id}"
+            carNameTextView.text = booking.vehiclename
+            startDateTextView.text = "Start: ${booking.pickupdate}"
+            endDateTextView.text = "End: ${booking.returndate}"
+            bookingIdTextView.text = "Booking #${booking.bookingsID}"
         }
     }
 }
